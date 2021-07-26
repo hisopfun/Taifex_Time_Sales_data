@@ -10,8 +10,8 @@ function getFile(){
 	#$1=dir $2=filename $3=url no file
 	echo $2"(Downloading......)";
 	mkdir $1
-	curl $3$2 > $1/$2  
-		
+	curl $3$2 > $1/$2 & 
+	echo $2" Done"	
 }
 
 # Time_Sales_Data/
